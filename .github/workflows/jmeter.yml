@@ -18,7 +18,7 @@ jobs:
         with:
           testFilePath: country-list.jmx
           outputReportsFolder: reports/
-          args: "--loglevel INFO"
+          args: "--loglevel INFO -Jthreads=2 -Jrampup=1 -Jloops=1"
 
       - uses: actions/upload-artifact@v1
         with:
