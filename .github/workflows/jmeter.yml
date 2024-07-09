@@ -3,9 +3,9 @@ name: Test JMeter Action
 on:
   push:
     branches:
-      - main
+      - test
   pull_request:
-    branches: [main]
+    branches: [test]
 
 jobs:
   action_build:
